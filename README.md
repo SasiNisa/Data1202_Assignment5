@@ -26,81 +26,125 @@ To get started with this project, follow these steps:  These steps will set up t
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+To run the script, the following dependencies should be installed:
 
-```
-Give examples
-```
+- Python 3.10
+- pandas
+- pymysql
+- SQLAlchemy
 
-### Installing
+You can install the required Python libraries using pip command in bash command prompt as follows:
 
-A step by step series of examples that tell you how to get a development env running
+pip install pandas 
+pip install pymysql SQLAlchemy
 
-Say what the step will be
+## Installing
 
-```
-Give the example
-```
+To set up the project and install dependencies, follow these steps:
 
-And repeat
+1. **Install Python**: Python should be installed on your system. You can download and install Python from the official website: [python.org](https://www.python.org/).
 
-```
-until finished
-```
+2. **Install pandas**: Install the pandas library, which is required for data manipulation in the project. You can install it using  pip command in bash command prompt as follows:
 
-End with an example of getting some data out of the system or using it for a little demo
+    pip install pandas
+    This command will install pandas and its dependencies on your system.
+
+Once these steps completed, you are ready to run the analysis and review the results.
+
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+This project includes automated tests to ensure its functionality is working correctly. To run these tests, follow these steps within the Jupyter Notebook:
 
-### Break down into end to end tests
+1. **Open the Jupyter Notebook**: Move to the project directory and open the Jupyter Notebook (`Assignment4_Group7.ipynb`) using Jupyter Notebook or Google Colab or VSCode.
 
-Explain what these tests test and why
+2. **Execute the Test Cells**: Execute all the cells previous to the automated tests. These cells are typically labeled or commented to indicate that they are tests. Execute each test cell by selecting it. 
 
-```
-Give an example
-```
+3. **Review Test Results**: On running the tests, review for the output that will confirm whether the system is functioning as expected.
+
+By following these steps within the Jupyter Notebook, you can verify that the project's functionality is working correctly and identify any issues that may need to be addressed.
+
+### Break down into end-to-end tests
+
+ In this project, the end-to-end tests ensure that the entire data analysis pipeline, from loading the dataset to exporting results, functions correctly and validate the functionality of the entire system from start to finish.
+
+**Example End-to-End Test:**
+
+1. **Test Case**: Verify that the entire data analysis process runs successfully on a sample dataset.
+
+2. **Test Steps**:
+   - Load the sample dataset into the notebook.
+   - Perform the data analysis such as selecting top 1000 records, calculating distribution of channel types.
+   - Export the results to a CSV file named as top_1000_records.csv.
+   - Connect to MySQL server and to the database.
+   - Load the exported results into a MySQL database table.
+
+3. **Expected Outcome**: 
+   - The analysis should be completed without any errors.
+   - The result should include the distribution of channel types.
+   - A CSV file containing the top 1000 records should be generated.
+   - The data from created csv file should be successfully inserted into the database table.
+
+  By executing these tests, you can confirm that the system works as expected and identify any potential issues and ensure that the entire data analysis workflow functions properly and meets the project requirements with End-to-end tests.
+
 
 ### And coding style tests
 
-Explain what these tests test and why
+While coding style tests or linting are not included in this project,  it is important to maintain code quality and coding standards for the long-term maintenance and readability of the code.
 
-```
-Give an example
-```
+**Importance of Code Quality**:
+
+While this project does not include automated coding style tests, it is recommended to follow best well-structured, readable, and maintainable coding conventions to improve code quality which is crucial for collaborative projects and future development efforts. 
+We can maintain the readability and maintainability of our code By writing clear and concise code, documenting where necessary, and following established coding standardsfor a positive development environment and contributions.
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+To deploy this project on a live system such as cloud platforms like AWS, Google Cloud Platform, or Azure, and other platforms such as Heroku and Render follow these general steps: These are general instructions. For deploying in a specific environment, more detailed steps should be followed.
+
+1. **Set Up Hosting Environment**: Choose a hosting provider or server for example Cloud Platform or traditional web hosting services where you want to deploy your project. 
+
+2. **Set up Environment**: Ensure that your hosting environment meets the necessary requirements and support your version of the software for running the project. 
+
+3. **Upload Files**: Upload all necessary files such as Python script, datasets, and any additional files required for the project to your hosting environment. 
+
+4. **Install Dependencies**: Make sure to install needed libraries or packages on your hosting environment. 
+
+5. **Run the Project**: Start your project on the live system. This may involve running a Python script, starting a web server, or launching an application.
+
+6. **Monitor and Maintain**: Regularly monitor your deployed project for any issues or performance bottlenecks. Check logging and error handling for debugging and keep your dependencies up to date.
+
+By following these deployment steps, you can successfully deploy your project on a live system and make it accessible to users.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Python](https://www.python.org/) - The programming language used
+* [pandas](https://pandas.pydata.org/) - Data manipulation library
+* [pymysql](https://pypi.org/project/PyMySQL/) - Python MySQL client library
+* [SQLAlchemy](https://www.sqlalchemy.org/) - SQL toolkit and Object-Relational Mapping (ORM) library
+
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+We welcome contributions from the community! If you're interested in contributing to this project, please contact the owner of this repo for details on our code of conduct, the process for submitting pull requests, and more.Your contributions are greatly appreciated and help improve the project for everyone.
+
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/SasiNisa/Data1202_Assignment5/tags).
+
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Sasikala Nisaharan** - *Programmer/all Coding tasks* - [SasiNisa](https://github.com/SasiNisa)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is not licensed, and all rights are reserved by the project owner. If you are interested in using or contributing to this project, please reach out to the project owner for more information.
+
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Special thanks to the creators and maintainers of Python for providing a powerful tool for data manipulation.
+* Thanks for the Data Analysis Tools Analytics Professor for Inspired me for doing this assignment and upload in GitHub.
+* Gratitude to all coding resource, for providing valuable insights and solutions to challenges encountered during project development.
 
