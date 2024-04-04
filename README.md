@@ -4,7 +4,6 @@ This repository contains a Python script for analyzing YouTube data of 4000 subs
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 To get started with this project, follow these steps:  These steps will set up the project, run the analysis, and review the results.
 
 1. **Clone the Repository**: Clone this GitHub repository to your local machine using the following command. You can do this using bash.
